@@ -7,7 +7,7 @@ It's a PaaS is your browser!
 ## Example
 
 ```
-git clone GIT /dominictarr/cspaas.git
+git clone git:github.com/dominictarr/cspaas.git
 cd cspaas
 node server.js
 open localhost:7000 #open this in a browser
