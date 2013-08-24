@@ -1,0 +1,16 @@
+
+<body>
+<input id=input>
+<pre id=output><pre>
+<script>
+  var input = document.getElementById('input')
+  var output = document.getElementById('output')
+  input.onchange = function () {
+    try {
+      output.innerText = eval(input.value)
+    } catch (err) {
+      output.innerText = err.stack
+    }
+  }
+</script>
+</body>

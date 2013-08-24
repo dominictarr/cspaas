@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<body>
+  <h2 id=dim>dim</h2>
+  <script>
+    var i = 0
+    function update() {
+      var click = document.getElementById('dim')
+      click.innerText = window.innerWidth + 'x' + window.innerHeight
+    }
+    window.onresize = update
+    update()
+  </script>
+</body>

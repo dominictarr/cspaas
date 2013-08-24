@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<body>
+  <pre id=pre>typesomething!
+  </pre>
+  <script>
+    var i = 0
+    console.log('script')
+    window.onkeydown = function (e) {
+      var keys = document.getElementById('pre')
+      console.log('key', e.charCode)
+      keys.innerText += String.fromCharCode(e.keyCode)
+    }
+  </script>
+</body>
